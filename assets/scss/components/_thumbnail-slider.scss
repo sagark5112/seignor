@@ -1,0 +1,36 @@
+.thumbnail__wrapper {
+    .blog {
+        @include media-breakpoint-down(sm){
+            .carousel-inner {
+                .carousel-item {
+                    &-block {
+                        text-align: center;
+                        .thumbnail-img {
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
+        .carousel-inner {
+            .carousel-item {
+                height: unset;
+            }
+        }
+        .carousel-indicators {
+            left: 0;
+            top: auto;
+            bottom: -40px;
+            li {
+                background: #a3a3a3;
+                border-radius: 50%;
+                width: 8px;
+                height: 8px;
+                border: none;
+            }
+            .active {
+                background: #707070;
+            }
+        }
+    }
+}

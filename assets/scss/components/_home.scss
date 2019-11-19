@@ -1,0 +1,83 @@
+.about__wrapper {
+    .about__text {
+        &--heading {
+
+        }
+        &--text {
+            
+        }
+    }
+    .about__media {
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(center);
+        img {
+            max-height: 70%;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+    }
+}
+.category__wrapper {
+    .category__block {
+        position: relative;
+        margin-bottom: ($grid-gutter-width / 1.5);
+        .category__image {
+            text-align: center;
+            transition: opacity 0.5s;
+        } 
+        .category__content {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        &:hover {
+            cursor: pointer;
+            .category__content {
+                opacity: 1;
+            }
+            .category__image {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+.testimonials__wrapper {
+    .testimonials__icon {
+        text-align: center;
+        img {
+            width: calc(100% - 60px);
+        }
+    }
+    .testimonials__content {
+        .slick-slider {
+            .slick-arrow {
+                &:before {
+                    font-size: 32px;
+                }
+                &.slick-prev {
+                    position: absolute;
+                    left: calc(-33% - 30px);
+                    &:before {
+                        content: "\f104";
+                        position: absolute;
+                        font-family: FontAwesome;
+                        color: $primary;
+                    }
+                }
+                &.slick-next {
+                    &:before {
+                        content: "\f105";
+                        position: absolute;
+                        font-family: FontAwesome;
+                        color: $primary;
+                    }                    
+                }
+            }
+        }
+    }
+}

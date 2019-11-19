@@ -1,0 +1,29 @@
+.btn--primary {
+    border: $border--thick solid $primary;
+    border-radius: 0;
+    padding: ($grid-gutter-width / 2) ($grid-gutter-width * 1.75);
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 500;
+    color: $primary;
+    background: $white;   
+    position: relative;
+    text-transform: uppercase;
+    &.chevron-right {
+        &:after {
+            content: "\f105";
+            position: absolute;
+            font-family: FontAwesome;
+            right: 25px;
+            font-size: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            
+        }
+        &:hover {
+            &:after {
+                right: 10px;
+                transition: right 0.25s ease-in-out;
+            }
+        }
+    }
+}
