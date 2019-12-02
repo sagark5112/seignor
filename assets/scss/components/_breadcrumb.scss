@@ -1,0 +1,31 @@
+.breadcrumb__wrapper {
+    .breadcrumb__inner {
+        padding: ($grid-gutter-width / 2) 0;
+        .breadcrumb--list {
+            @include flexbox();
+            .list-item {    
+                padding-right: ($grid-gutter-width * 1.5);
+                position: relative;
+                &--link {
+                    color: $white;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                &:after {
+                    content: "\f105";
+                    position: absolute;
+                    font-family: FontAwesome;
+                    right: 15px;
+                    color: $white;
+                    transform: translateX(-50%);
+                }
+                &:last-child {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

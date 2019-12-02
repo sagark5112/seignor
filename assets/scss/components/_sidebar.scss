@@ -28,10 +28,10 @@
             }
             .sidebar__list {
                 list-style: none;
-                margin: 0;
+                margin: ($grid-gutter-width) 0;
                 padding: 0;
                 .list__item {
-                    color: $secondary;
+                    color: $white;
                     font-size: 18px;
                     padding: ($grid-gutter-width / 3) 0;
                     position: relative;
@@ -40,8 +40,8 @@
                     &:after {
                         content: "";
                         position: absolute;
-                        width: calc(100%);
-                        border-bottom: 1px dashed darken($secondary ,30%);
+                        width: calc(100% + 15px);
+                        border-bottom: 1px dashed darken($white  ,30%);
                         left: -15px;
                         bottom: 0;
                     }
@@ -65,7 +65,7 @@
                     position: absolute;
                     width: calc(100% + 15px);
                     height: 100%;
-                    background: $secondary;
+                    background: $white;
                     top: 0;
                     z-index: -9;
                     left: -15px;
@@ -86,7 +86,7 @@
                             @include justify-content(center);
                             @include align-items(center);
                             i {
-                                color: $secondary;
+                                color: $white;
                             }
                         }
                     }
