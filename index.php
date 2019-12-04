@@ -1,83 +1,37 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Seignor</title>
-        <link rel="stylesheet" type="text/css" media="screen" href="./dist/css/style.css"/>
-        <script
-        src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous"></script>        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"
-        ></script>
-        <script src="https://use.fontawesome.com/e554302417.js"></script>
-        <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick-theme.css"/>
+<?php 
+  include('header.php');
+?>
+<title> Seignor Scale Industries </title>
+<?php 
+  include('sidebar.php'); 
+?>  
 
-        <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,500,600,700,800,900&display=swap" rel="stylesheet">  
-    </head>
-    <body>
-        <div class="sidebar__block">
-            <div class="container-fluid">
-                <div class="row">
-                  <div class="sidebar__button"> 
-                    <button class="btn btn-success">Menu</button>
-                  </div>
-                  <div class="sidebar__wrapper col-md-3">
-                    <div class="sidebar__inner">
-                      <img class="sidebar__logo img-fluid" src="dist/images/logos/Yellow/YellowPng.png">
-                      <ul class="sidebar__list">
-                        <li class="list__item">Home</li>
-                        <li class="list__item">Two</li>
-                        <li class="list__item">Three</li>
-                        <li class="list__item">Four</li>
-                        <li class="list__item">Five</li>
-                        <li class="list__item">Six</li>
-                      </ul>
-                      <div class="sidebar__social">
-                        <div class="sidebar__social__inner">
-                          <ul class="social__list">
-                            <li class="list__item"><a class="list__item__link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li class="list__item"><a class="list__item__link" href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
-                            <li class="list__item"><a class="list__item__link" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li class="list__item"><a class="list__item__link" href=""><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>                    
-                  </div>
-                </div>
-              </div>
-        </div>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-interval="100">
-              <img src="./dist/images/banners/Platform.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-interval="100">
-              <img src="./dist/images/banners/Price.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-interval="100">
-              <img src="./dist/images/banners/Retail scale.jpg" class="d-block w-100" alt="...">
-            </div>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="100">
+            <img src="./dist/images/banners/Platform.jpg" class="d-block w-100" alt="...">
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          <div class="carousel-item" data-interval="100">
+            <img src="./dist/images/banners/Price.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-interval="100">
+            <img src="./dist/images/banners/Retail scale.jpg" class="d-block w-100" alt="...">
+          </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
       
       <div class="header" id="myHeader">        
         <img class="header__image" src="dist/images/logos/Blue/BluePng.png">
@@ -311,69 +265,10 @@
           </div>
         </div>
       </section>
-      <footer class="footer-wrapper">
-        <div class="container-fluid footer-content">
-            <div class="row">
-                <div class="container">
-                    <div class="row py-3">
-                        <div class="col-md-4 footer-links-wrap">
-                            <figure class="footer-logo-wrap">
-                                <img src="./dist/images/logos/White/WhitePng.png">
-                                <figcaption>Seignor Scale Industries</figcaption>
-                            </figure>
-                            <ul class="footer-link-block">
-                                <li class="footer-link-item">
-                                    <a href="#">
-                                        About Us
-                                    </a>
-                                </li>
-                                <li class="footer-link-item">
-                                    <a href="#">
-                                        Contact Us
-                                    </a>
-                                </li>
-                                <li class="footer-link-item">
-                                    <a href="#">
-                                        Terms and Conditions
-                                    </a>
-                                </li>
-                                <li class="footer-link-item">
-                                    <a href="#">
-                                        Privacy Policies
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-8 footer-mao">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.078097503276!2d73.15719134999652!3d19.235427851877613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be79417cda404db%3A0xa4a042a2f5d2fc0!2sGol+Maidan+Bus+Stop!5e0!3m2!1sen!2sin!4v1559460810776!5m2!1sen!2sin" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid footer-rights">
-            <div class="row">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="text-center my-2">Copyright © 2019 OnePolls. All rights reserved.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid footer-credits">
-            <div class="row">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="text-center my-2">With love from Ashiton</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </footer>
+    
+      <script type="text/javascript" src="./node_modules/slick-carousel/slick/slick.js"></script>
+      <script src="js/commonScripts.js"></script>
+      <!-- Script specific to this page -->
       <script>
         window.onscroll = function() {myFunction()};
         
@@ -389,28 +284,9 @@
           }
         }
 
-        // $(".sidebar__wrapper").fadeOut();
-        $(".sidebar__button").click(function(){
-          $(".sidebar__wrapper").fadeToggle();
-          $(".sidebar__button").toggleClass("sidebar__open");
-          $(".sidebar__open .btn").text("Close");
-        });        
+      
       </script>
-      <script type="text/javascript" src="./node_modules/slick-carousel/slick/slick.js"></script>
-
-      <script>
-      $(document).ready(function(){
-        $('.slick-slider').slick({
-          centerMode: false,
-          centerPadding: "60px",
-          slidesToShow: 1,
-          arrows: true,
-          autoplay: true,
-          autoplaySpeed: 2000,
-          infinite: true,
-        });
-      });
-      </script> 
-
-    </body>
-</html>
+      
+<?php 
+  include('footer.php');
+?>
